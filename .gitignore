@@ -1,0 +1,9 @@
+.dev
+.env.local
+node_modules/
+dist/
+backend/.env
+backend/runtime/
+__pycache__/
+.pytest_cache/
+test-results/

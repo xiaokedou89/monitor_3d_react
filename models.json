@@ -1,0 +1,317 @@
+{
+  "_说明": "模型配置支持路径字符串，或 {path, rotation: {x, y, z}}。路径相对 data/，旋转单位为度，XYZ 欧拉角，缺省轴为 0。Y 调整左右朝向，X 调整前后倾斜，Z 调整侧倾。保存后刷新页面生效。详见 docs/06-展示样式调整操作手册.md §4.5。",
+  "models": {
+    "server": {
+      "path": "models/server.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "idc": {
+      "path": "models/idc.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "org": {
+      "path": "models/org.glb",
+      "rotation": {
+        "x": 0,
+        "y": 45,
+        "z": 0
+      }
+    },
+    "org-planning": {
+      "path": "models/org.glb",
+      "rotation": {
+        "x": 0,
+        "y": 45,
+        "z": 0
+      }
+    },
+    "biz-app": {
+      "path": "models/biz-app.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "terminal": {
+      "path": "models/terminal.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "residential-proxy": {
+      "path": "models/residential-proxy.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "cloud-idc": {
+      "path": "models/cloud-idc.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "cell-phone": {
+      "path": "models/cell-phone.glb",
+      "rotation": {
+        "x": -10,
+        "y": 30,
+        "z": 0
+      }
+    },
+    "firewall": {
+      "path": "models/firewall.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "tower": {
+      "path": "models/tower.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "aircraft": {
+      "path": "models/f22.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "residence": {
+      "path": "models/residential-proxy.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "sales": {
+      "path": "models/satellite_thing.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "after-sales": {
+      "path": "models/firewall.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "dedicated-device": {
+      "path": "models/terminal.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "vpn-service": {
+      "path": "models/residential-proxy.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "info-publish": {
+      "path": "models/org.glb",
+      "rotation": {
+        "x": 0,
+        "y": 45,
+        "z": 0
+      }
+    },
+    "website": {
+      "path": "models/org.glb",
+      "rotation": {
+        "x": 0,
+        "y": 45,
+        "z": 0
+      }
+    },
+    "vps-control": {
+      "path": "models/residential-proxy.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "transport-proxy": {
+      "path": "models/residential-proxy.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "arp-service": {
+      "path": "models/residential-proxy.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "vps": {
+      "path": "models/firewall.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "production": {
+      "path": "models/server.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "data-storage": {
+      "path": "models/firewall.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "ops": {
+      "path": "models/terminal.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "rd": {
+      "path": "models/terminal.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "data-collect": {
+      "path": "models/org.glb",
+      "rotation": {
+        "x": 0,
+        "y": 45,
+        "z": 0
+      }
+    },
+    "data-analysis": {
+      "path": "models/org.glb",
+      "rotation": {
+        "x": 0,
+        "y": 45,
+        "z": 0
+      }
+    },
+    "user-terminal": {
+      "path": "models/server.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "gateway": {
+      "path": "models/residential-proxy.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "netgap": {
+      "path": "models/residential-proxy.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "enclave-idc": {
+      "path": "models/cloud-idc.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "arp-app": {
+      "path": "models/residential-proxy.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "dedicated-line": {
+      "path": "models/org.glb",
+      "rotation": {
+        "x": 0,
+        "y": 45,
+        "z": 0
+      }
+    },
+    "security-monitor": {
+      "path": "models/residential-proxy.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "biz-mgmt-terminal": {
+      "path": "models/terminal.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "threat-response": {
+      "path": "models/residential-proxy.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    },
+    "attacker": {
+      "path": "models/server.glb",
+      "rotation": {
+        "x": 0,
+        "y": 0,
+        "z": 0
+      }
+    }
+  }
+}

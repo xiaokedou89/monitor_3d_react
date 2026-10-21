@@ -1,0 +1,50 @@
+{
+  "name": "monitorctrl-react",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "3D 展示管控系统 — 分层网络拓扑 3D 交互展示与管控（React 版）",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview --port 4173 --strictPort",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "e2e": "playwright test",
+    "gen:data": "tsx scripts/gen-data.ts",
+    "fetch:map": "node scripts/fetch-map-data.mjs",
+    "sse": "tsx server/mock-sse.ts",
+    "config-server": "tsx server/config-server.ts",
+    "app:setup": "./manage.sh setup",
+    "app:start": "./manage.sh start",
+    "app:start-local": "./manage.sh start-local",
+    "app:stop": "./manage.sh stop",
+    "app:status": "./manage.sh status",
+    "backend:start": "backend/scripts/manage.sh start",
+    "backend:stop": "backend/scripts/manage.sh stop",
+    "backend:status": "backend/scripts/manage.sh status",
+    "dev:backend": "./manage.sh start"
+  },
+  "dependencies": {
+    "earcut": "^3.0.1",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-markdown": "^10.1.0",
+    "remark-gfm": "^4.0.1",
+    "three": "0.185.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.62.1",
+    "@types/earcut": "^2.1.4",
+    "@types/node": "^26.4.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@types/three": "^0.185.0",
+    "@vitejs/plugin-react": "^6.1.1",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0",
+    "vite": "^8.2.2",
+    "vitest": "^4.1.11"
+  }
+}

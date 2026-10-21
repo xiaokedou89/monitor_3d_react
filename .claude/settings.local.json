@@ -1,0 +1,30 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm run *)",
+      "Bash(npm test *)",
+      "Bash(npx playwright *)",
+      "Bash(node -e ' *)",
+      "Bash(npx tsc *)",
+      "Bash(npx vitest *)",
+      "Bash(/home/mantis/miniconda3/envs/globalctl/bin/python -m pytest -q)",
+      "Bash(/home/mantis/miniconda3/envs/globalctl/bin/python -m pytest tests/test_cmdb.py -q)",
+      "Bash(/home/mantis/miniconda3/envs/globalctl/bin/python -m pytest tests/test_alerts_params.py::test_alerts_rejects_unknown_category -q)",
+      "Bash(echo \"EXIT=$?\")",
+      "Read(//tmp/**)",
+      "Bash(ps aux *)",
+      "Bash(awk '{print $3, $11}')",
+      "Bash(kill -9 2395295)",
+      "Bash(nohup bash -c 'source scripts/manage.sh && start_process api \"$ENV_BIN/uvicorn\" app.main:app --host 0.0.0.0 --port 9528')",
+      "Bash(curl -s http://127.0.0.1:9528/readyz)",
+      "Bash(curl -s -X POST http://127.0.0.1:9528/api/v1/assets -H 'Content-Type: application/json' -d '{\"id\":\"e2e-kind-smoke\",\"name\":\"smoke\",\"kind\":\"router\",\"layer\":\"device\",\"zone\":\"business\"}')",
+      "Bash(curl -s -X POST http://127.0.0.1:9528/api/v1/assets -H 'Content-Type: application/json' -d '{\"id\":\"e2e-kind-smoke\",\"name\":\"smoke\",\"kind\":\"server\",\"layer\":\"app\",\"zone\":\"business\"}')",
+      "Bash(curl -s -X POST http://127.0.0.1:9528/api/v1/assets -H 'Content-Type: application/json' -d '{\"id\":\"e2e-kind-smoke\",\"name\":\"smoke\",\"kind\":\"gateway\",\"layer\":\"device\",\"zone\":\"business\"}')",
+      "Bash(convert /tmp/assistant-ico.png -crop 30x30+26+26 +repage -resize 24x24! -colorspace gray txt:-)",
+      "Bash(python3 -c ' *)"
+    ],
+    "additionalDirectories": [
+      "/tmp"
+    ]
+  }
+}

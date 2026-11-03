@@ -1,0 +1,7 @@
+.env
+runtime/*.pid
+runtime/*.log
+runtime/vector/
+runtime/xdr/*.ndjson
+__pycache__/
+.pytest_cache/

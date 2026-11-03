@@ -1,0 +1,48 @@
+services:
+  mysql:
+    image: mysql:latest
+    container_name: globalmonitor-mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: globalctl_root_password
+      MYSQL_DATABASE: globalctl_cmdb
+      MYSQL_USER: globalctl
+      MYSQL_PASSWORD: globalctl_dev_password
+      TZ: Asia/Shanghai
+    ports:
+      - "13306:3306"
+    volumes:
+      - globalmonitor_mysql:/var/lib/mysql
+      - ./docker/mysql/001-schema.sql:/docker-entrypoint-initdb.d/001-schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h 127.0.0.1 -uglobalctl -pglobalctl_dev_password --silent"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+  clickhouse:
+    image: dockerproxy.net/library/clickhouse:latest
+    container_name: globalmonitor-clickhouse
+    restart: unless-stopped
+    environment:
+      CLICKHOUSE_DB: globalctl_xdr
+      CLICKHOUSE_USER: globalctl
+      CLICKHOUSE_PASSWORD: globalctl_dev_password
+      CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: "1"
+      TZ: Asia/Shanghai
+    ports:
+      - "18123:8123"
+      - "19000:9000"
+    volumes:
+      - globalmonitor_clickhouse:/var/lib/clickhouse
+      - ./docker/clickhouse/001-schema.sql:/docker-entrypoint-initdb.d/001-schema.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "wget -qO- --user=globalctl --password=globalctl_dev_password http://127.0.0.1:8123/ping || exit 1"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+
+volumes:
+  globalmonitor_mysql:
+  globalmonitor_clickhouse:
+

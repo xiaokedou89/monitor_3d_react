@@ -1,0 +1,7 @@
+{
+  "backend/tests/test_collector.py": true,
+  "backend/tests/test_events.py": true,
+  "backend/tests/test_xdr_simulator.py": true,
+  "backend/tests/test_alerts_params.py": true,
+  "backend/tests/test_cmdb.py": true
+}
